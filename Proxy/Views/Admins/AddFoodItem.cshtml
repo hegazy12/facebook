@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "AddFoodItem";
+}
+
+<h2>AddFoodItem</h2>
+
+<form method="post" action="/admins/AddFoodItem" enctype="multipart/form-data">
+      <label>Name</label><input type="text" name="name"/>
+      <br />
+      <label>Photo</label><input type="file" name="photo" />
+      <br />
+      <label>Description</label><input type="text" name="Description"/>
+      <br />
+      <label>Price</label><input type="number" name="price"/>
+      <br />
+      <label>Time</label><input type="number" name="time"/>
+      <br />
+      <label>Food</label>
+      <input type="radio" value="1" name="type" checked/>
+      <label>The Drink</label>
+      <input type="radio" value="2" name="type" />
+      <br />
+      <input type="submit" value="Send" />
+</form>

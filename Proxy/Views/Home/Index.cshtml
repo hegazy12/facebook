@@ -1,0 +1,33 @@
+﻿@model IList<Proxy.Models.itemfood>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container" >
+@{
+    foreach(var item in Model)
+    {
+        
+        <div class="col-sm-4" >
+            <img src="@item.photo" height="150px" />
+            
+            <h3>
+                @item.name
+            </h3>
+            
+            <h4>
+                @item.Description
+            </h4>
+            
+            <h3>
+                @item.price
+            </h3>
+            <h5>
+                <a href="/Home/add/@item.id"> Add in my Order </a>
+            </h5>
+        </div>
+    }
+}
+</div>
+
